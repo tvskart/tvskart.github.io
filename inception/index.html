@@ -1,12 +1,9 @@
-<head>
+<div id="frameContainer"></div>
 <script>
 const f = document.createElement('iframe');
 const rand = Math.random();
 f.src = `https://tvskart.github.io/inception/?v=${rand}`;
 f.width = "100%";
 f.height = "100%";
-document.body.appendChild(f);
+document.querySelector("#frameContainer").appendChild(f);
 </script>
-</head>
-<body></body>
-
